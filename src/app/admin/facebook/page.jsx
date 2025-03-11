@@ -1,5 +1,5 @@
 export default async function Facebook() {
-  const res = await fetch("http://localhost:3000/api/facebook");
+  const res = await fetch("/api/facebook");
   const posts = await res.json();
   return (
     <section className="socialMain">

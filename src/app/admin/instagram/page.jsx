@@ -1,5 +1,5 @@
 export default async function Instagram() {
-  const res = await fetch("http://localhost:3000/api/instagram");
+  const res = await fetch("/api/instagram");
   const posts = await res.json();
   return (
     <section className="socialMain">

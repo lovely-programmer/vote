@@ -1,17 +1,11 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 export default async function Dashboard() {
-  const facebook = await fetch("http://localhost:3000/api/facebook").then(
-    (res) => res.json()
-  );
+  const facebook = await fetch("/api/facebook").then((res) => res.json());
 
-  const instagram = await fetch("http://localhost:3000/api/instagram").then(
-    (res) => res.json()
-  );
+  const instagram = await fetch("/api/instagram").then((res) => res.json());
 
-  const outlook = await fetch("http://localhost:3000/api/outlook").then((res) =>
-    res.json()
-  );
+  const outlook = await fetch("/api/outlook").then((res) => res.json());
 
   return (
     <div className={styles.page}>
