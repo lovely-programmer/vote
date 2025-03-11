@@ -1,0 +1,58 @@
+.page {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook {
+  background-color: rgb(24, 119, 242);
+}
+
+.instagram {
+  background-color: #09d18b;
+}
+
+.outlook {
+  background-color: #01b6b9;
+}
+
+.boxes a {
+  width: 100%;
+  min-height: 50px;
+  padding: 20px;
+  color: #fff;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .boxes {
+    flex-wrap: wrap;
+  }
+}
