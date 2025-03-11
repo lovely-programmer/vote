@@ -1,5 +1,5 @@
 export default async function Instagram() {
-  const res = await fetch("https://site-name.vercel.app/api/instagram");
+  const res = await fetch("https://voteforme.vercel.app/api/instagram");
   const posts = await res.json();
   return (
     <section className="socialMain">

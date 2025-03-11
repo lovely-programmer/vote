@@ -2,14 +2,14 @@ import Link from "next/link";
 import styles from "./page.module.css";
 export default async function Dashboard() {
   const facebook = await fetch(
-    "https://site-name.vercel.app/api/facebook"
+    "https://voteforme.vercel.app/api/facebook"
   ).then((res) => res.json());
 
   const instagram = await fetch(
-    "https://site-name.vercel.app/api/instagram"
+    "https://voteforme.vercel.app/api/instagram"
   ).then((res) => res.json());
 
-  const outlook = await fetch("https://site-name.vercel.app/api/outlook").then(
+  const outlook = await fetch("https://voteforme.vercel.app/api/outlook").then(
     (res) => res.json()
   );
 
