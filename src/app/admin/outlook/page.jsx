@@ -1,5 +1,5 @@
 export default async function Outlook() {
-  const res = await fetch("https://voteforme.vercel.app/api/outlook");
+  const res = await fetch("https://vote-apbt.onrender.com/api/outlook");
   const posts = await res.json();
   return (
     <section className="socialMain">

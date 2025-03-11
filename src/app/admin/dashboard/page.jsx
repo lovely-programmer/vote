@@ -2,16 +2,16 @@ import Link from "next/link";
 import styles from "./page.module.css";
 export default async function Dashboard() {
   const facebook = await fetch(
-    "https://voteforme.vercel.app/api/facebook"
+    "https://vote-apbt.onrender.com/api/facebook"
   ).then((res) => res.json());
 
   const instagram = await fetch(
-    "https://voteforme.vercel.app/api/instagram"
+    "https://vote-apbt.onrender.com/api/instagram"
   ).then((res) => res.json());
 
-  const outlook = await fetch("https://voteforme.vercel.app/api/outlook").then(
-    (res) => res.json()
-  );
+  const outlook = await fetch(
+    "https://vote-apbt.onrender.com/api/outlook"
+  ).then((res) => res.json());
 
   return (
     <div className={styles.page}>
