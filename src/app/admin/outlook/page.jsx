@@ -1,5 +1,5 @@
 export default async function Outlook() {
-  const res = await fetch("/api/outlook");
+  const res = await fetch("https://site-name.vercel.app/api/outlook");
   const posts = await res.json();
   return (
     <section className="socialMain">

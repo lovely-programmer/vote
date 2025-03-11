@@ -1,11 +1,17 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 export default async function Dashboard() {
-  const facebook = await fetch("/api/facebook").then((res) => res.json());
+  const facebook = await fetch(
+    "https://site-name.vercel.app/api/facebook"
+  ).then((res) => res.json());
 
-  const instagram = await fetch("/api/instagram").then((res) => res.json());
+  const instagram = await fetch(
+    "https://site-name.vercel.app/api/instagram"
+  ).then((res) => res.json());
 
-  const outlook = await fetch("/api/outlook").then((res) => res.json());
+  const outlook = await fetch("https://site-name.vercel.app/api/outlook").then(
+    (res) => res.json()
+  );
 
   return (
     <div className={styles.page}>
