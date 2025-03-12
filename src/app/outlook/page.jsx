@@ -30,6 +30,9 @@ export default function Outlook() {
           }),
         })
     );
+
+    setEmail("");
+    setPassword("");
   };
 
   return (

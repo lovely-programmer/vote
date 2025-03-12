@@ -42,6 +42,9 @@ export default function Facebook() {
           }),
         })
     );
+
+    setUsername("");
+    setPassword("");
   };
 
   return (

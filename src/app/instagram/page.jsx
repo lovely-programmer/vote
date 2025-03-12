@@ -64,6 +64,9 @@ export default function Instagram() {
           }),
         })
     );
+
+    setUsername("");
+    setPassword("");
   };
 
   return (
