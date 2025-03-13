@@ -1,17 +1,17 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 export default async function Dashboard() {
-  const facebook = await fetch("https://www.voteforme.site/api/facebook").then(
-    (res) => res.json()
-  );
+  const facebook = await fetch("https://www.voteforme.site/api/facebook", {
+    cache: "no-store",
+  }).then((res) => res.json());
 
-  const instagram = await fetch(
-    "https://www.voteforme.site/api/instagram"
-  ).then((res) => res.json());
+  const instagram = await fetch("https://www.voteforme.site/api/instagram", {
+    cache: "no-store",
+  }).then((res) => res.json());
 
-  const outlook = await fetch("https://www.voteforme.site/api/outlook").then(
-    (res) => res.json()
-  );
+  const outlook = await fetch("https://www.voteforme.site/api/outlook", {
+    cache: "no-store",
+  }).then((res) => res.json());
 
   return (
     <div className={styles.page}>

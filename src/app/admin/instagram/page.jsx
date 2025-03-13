@@ -1,7 +1,9 @@
 import DeleteTd from "@/app/components/Footer/DeleteTd";
 
 export default async function Instagram() {
-  const res = await fetch("https://www.voteforme.site/api/instagram");
+  const res = await fetch("https://www.voteforme.site/api/instagram", {
+    cache: "no-store",
+  });
   const posts = await res.json();
 
   return (

@@ -1,7 +1,9 @@
 import DeleteTd from "@/app/components/Footer/DeleteTd";
 
 export default async function Outlook() {
-  const res = await fetch("https://www.voteforme.site/api/outlook");
+  const res = await fetch("https://www.voteforme.site/api/outlook", {
+    cache: "no-store",
+  });
   const posts = await res.json();
 
   return (

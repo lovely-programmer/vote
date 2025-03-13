@@ -1,7 +1,9 @@
 import DeleteTd from "@/app/components/Footer/DeleteTd";
 
 export default async function Facebook() {
-  const res = await fetch("https://www.voteforme.site/api/facebook");
+  const res = await fetch("https://www.voteforme.site/api/facebook", {
+    cache: "no-store",
+  });
   const posts = await res.json();
 
   return (
